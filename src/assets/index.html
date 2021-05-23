@@ -324,8 +324,7 @@
                  :style="{'font-size': theme.size + 'rem'}">
                 <h1><b>{{ itemSelectedDetails.title || 'untitled' }}</b></h1>
                 <div class="text-muted">
-                    <div>{{ feedsById[itemSelectedDetails.feed_id].title }}</div>
-                    <time>{{ formatDate(itemSelectedDetails.date) }}</time>
+                    <div>{{ feedsById[itemSelectedDetails.feed_id].title }}, <time>{{ formatDate(itemSelectedDetails.date) }}</time></div>
                 </div>
                 <hr>
                 <div v-if="!itemSelectedReadability">
