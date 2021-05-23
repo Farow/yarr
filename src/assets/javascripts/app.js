@@ -453,6 +453,12 @@ var vm = new Vue({
       }
       return new Date(datestr).toLocaleDateString(undefined, options)
     },
+    formatDateShort: function(datestr) {
+      var options = {
+        year: "numeric", month: "long", day: "numeric",
+      }
+      return new Date(datestr).toLocaleDateString(undefined, options)
+    },
     moveFeed: function(feed, folder) {
       var folder_id = folder ? folder.id : null
       api.feeds.update(feed.id, {folder_id: folder_id}).then(function() {
