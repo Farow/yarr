@@ -255,7 +255,7 @@
                             <small class="flex-fill text-truncate mr-1">
                                 {{ feedsById[item.feed_id].title }}
                             </small>
-                            <small class="flex-shrink-0"><relative-time :val="item.date"/></small>
+                            <small title="Article age" class="flex-shrink-0"><relative-time v-bind:title="formatDate(item.date)" :val="item.date"/></small>
                         </div>
                         <div>{{ item.title || 'untitled' }}</div>
                     </div>
