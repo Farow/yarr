@@ -43,6 +43,10 @@ select.form-control:not([multiple]):not([size]) {
   display: none;
 }
 
+.overflow-auto {
+  scrollbar-width: thin;
+}
+
 .settings-dropdown .dropdown-toggle {
   padding-left: 0;
   padding-right: 0;
@@ -418,6 +422,10 @@ select.form-control:not([multiple]):not([size]) {
 
 /* theme: light */
 
+.theme-light {
+  scrollbar-color: #DEE2E6 #FFFFFF;
+}
+
 button.theme-light {
   background-color: #fff !important;
 }
@@ -442,6 +450,10 @@ a,
 
 /* theme: sepia */
 
+.theme-sepia {
+  scrollbar-color: #E0D6BA #F4F0E5;
+}
+
 .theme-sepia,
 .theme-sepia .btn-default,
 .theme-sepia .dropdown-menu,
@@ -465,6 +477,10 @@ a,
 }
 
 /* theme: night */
+
+.theme-night {
+  scrollbar-color: #1A1A1A #0E0E0E;
+}
 
 .theme-night,
 .theme-night .btn-default,
