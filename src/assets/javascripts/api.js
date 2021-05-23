@@ -72,7 +72,10 @@
     },
     items: {
       get: function(id) {
-        return api('get', './api/items/' + id).then(json)
+        return api('get', './api/items/' + id).then(json).then(feed => {
+          feed.readingTime = ReadingTime.calculateHtml(feed.content);
+          return feed;
+        });
       },
       list: function(query) {
         return api('get', './api/items' + param(query)).then(json)

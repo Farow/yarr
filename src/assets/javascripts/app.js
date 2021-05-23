@@ -612,6 +612,7 @@ var vm = new Vue({
         api.crawl(item.link).then(function(data) {
           vm.itemSelectedReadability = data && data.content
           vm.loading.readability = false
+          item.readingTime = ReadingTime.calculateHtml(data?.content)
         })
       }
     },
