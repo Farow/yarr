@@ -5,12 +5,15 @@ as a desktop application and a personal self-hosted server.
 
 It is written in Go with the frontend in Vue.js. The storage is backed by SQLite.
 
+This repository is forked from https://github.com/nkanaev/yarr/.  
+Changes from the original can be found under [commits](../../commits/farow?author=Farow).
+
+Firefox/Windows screenshot:
 ![screenshot](etc/promo.png)
 
 ## usage
 
-The latest prebuilt binaries for Linux/MacOS/Windows are available
-[here](https://github.com/nkanaev/yarr/releases/latest).
+Prebuilt binaries might be available under [releases](../../releases/latest).
 
 ### macos
 
