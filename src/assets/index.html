@@ -57,14 +57,14 @@
 
                     <div class="dropdown-divider"></div>
 
-                    <header class="dropdown-header">Auto Refresh</header>
+                    <header class="dropdown-header">Auto refresh</header>
                     <div class="row text-center m-0">
-                        <button class="dropdown-item col-4 px-0" :class="{active: !refreshRate}" @click.stop="refreshRate = 0">0</button>
-                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 10}" @click.stop="refreshRate = 10">10m</button>
-                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 30}" @click.stop="refreshRate = 30">30m</button>
-                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 60}" @click.stop="refreshRate = 60">1h</button>
-                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 120}" @click.stop="refreshRate = 120">2h</button>
-                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 240}" @click.stop="refreshRate = 240">4h</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: !refreshRate}" @click.stop="refreshRate = 0" title="Do not refresh feeds.">Off</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 10}" @click.stop="refreshRate = 10" title="Refresh every 10 minutes.">10m</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 30}" @click.stop="refreshRate = 30" title="Refresh every 30 minutes.">30m</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 60}" @click.stop="refreshRate = 60" title="Refresh every 1 hours.">1h</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 120}" @click.stop="refreshRate = 120" title="Refresh every 2 hours.">2h</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: refreshRate == 240}" @click.stop="refreshRate = 240" title="Refresh every 4 hours.">4h</button>
                     </div>
 
                     <div class="dropdown-divider"></div>
