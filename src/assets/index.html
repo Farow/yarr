@@ -69,6 +69,15 @@
 
                     <div class="dropdown-divider"></div>
 
+                    <header class="dropdown-header">Delete old articles</header>
+                    <div class="row text-center m-0">
+                        <button class="dropdown-item col-4 px-0" :class="{active: !deleteAfter}" @click.stop="deleteAfter = 0" title="Do not delete old articles.">Off</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: deleteAfter == 30}" @click.stop="deleteAfter = 30" title="Delete after 30 days.">30d</button>
+                        <button class="dropdown-item col-4 px-0" :class="{active: deleteAfter == 90}" @click.stop="deleteAfter = 90" title="Delete after 90 days.">90d</button>
+                    </div>
+
+                    <div class="dropdown-divider"></div>
+
                     <header class="dropdown-header">Show first</header>
                     <div class="d-flex text-center">
                         <button class="dropdown-item px-0" :class="{active: itemSortNewestFirst}" @click.stop="itemSortNewestFirst=true">New</button>

@@ -227,6 +227,7 @@ var vm = new Vue({
         'size': s.theme_size,
       },
       'refreshRate': s.refresh_rate,
+      'deleteAfter': s.delete_after,
       'authenticated': app.authenticated,
       'feed_errors': {},
     }
@@ -352,6 +353,10 @@ var vm = new Vue({
     'refreshRate': function(newVal, oldVal) {
       if (oldVal === undefined) return  // do nothing, initial setup
       api.settings.update({refresh_rate: newVal})
+    },
+    'deleteAfter': function(newVal, oldVal) {
+      if (oldVal === undefined) return  // do nothing, initial setup
+      api.settings.update({delete_after: newVal})
     },
   },
   methods: {
