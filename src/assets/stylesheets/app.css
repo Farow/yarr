@@ -406,7 +406,7 @@ select.form-control:not([multiple]):not([size]) {
 }
 
 .content h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .content h2 {
   font-size: 1.5rem;
@@ -418,6 +418,10 @@ select.form-control:not([multiple]):not([size]) {
 .content h5,
 .content h6 {
   font-size: 1rem;
+}
+
+.text-muted {
+  font-size:  0.8rem;
 }
 
 /* theme: light */
